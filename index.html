@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>The Brothers Events</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="active">
+        <a href="/" class="logo">The Brothers Events</a>
+        <a href="#" class="menu" onclick="toggleMenu();">
+            <ion-icon class="open" name="menu-outline"></ion-icon>
+            <ion-icon class="close" name="close-outline"></ion-icon>
+        </a>
+        <ul class="nav">
+            <li class="nav-btn active" href="/" onclick="resetHeader();"><ion-icon name="home-outline"></ion-icon></li>
+            <li>
+                <a href="" class="nav-btn" data-target="about">Über Uns</a>
+            </li>
+            <li>
+                <a href="" class="nav-btn" data-target="services">Unsere Leistungen</a>
+            </li>
+            <li>
+                <a href="" class="nav-btn" data-target="portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="" class="nav-btn" data-target="contact">Kontakt</a>
+            </li>
+        </ul>
+     </header>
+
+     <!-- Mobile-Navigation -->
+     <ul class="nav-mobile">
+        <li class="nav-btn active" href="/" onclick="resetHeader();"><ion-icon name="home-outline"></ion-icon></li>
+        <li>
+            <a href="" class="nav-btn" data-target="about">Über Uns</a>
+        </li>
+        <li>
+            <a href="" class="nav-btn" data-target="services">Unsere Leistungen</a>
+        </li>
+        <li>
+            <a href="" class="nav-btn" data-target="portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="" class="nav-btn" data-target="contact">Kontakt</a>
+        </li>
+    </ul>
+
+     <!-- Banner -->
+    <div class="banner container-fluid">
+        <div class="bg-slide slide-1 active">
+            <div class="content">
+                <h1>Hochzeiten</h1>
+                <p>
+                    Wir legen großen Wert auf Qualität und Kundenzufriedenheit. Unsere hochwertigen Produkte und unser professionelles Team sorgen dafür, dass Ihre Hochzeit ein unvergessliches Erlebnis wird. Von Ballons über Dekorationen bis hin zu Getränken – wir haben alles, was Sie für eine gelungene Feier brauchen.
+                </p>
+            </div>
+            <div class="circle bg">
+                <img src="images/wedding-2.jpg" alt="Hochzeit" />
+                <div class="circle large">
+                    <img src="images/wedding-2.jpg" alt="Hochzeit" />
+                    <div class="circle small">
+                        <img src="images/wedding-2.jpg" alt="Hochzeit" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-2">
+            <div class="content">
+                <h1>Feierlichkeiten</h1>
+                <p>
+                    Ob Firmenfeiern oder private Anlässe – wir bieten professionelle Dienstleistungen, um Ihre Feier reibungslos und unvergesslich zu gestalten. Lassen Sie sich von unseren kreativen Ideen inspirieren und erleben Sie einen reibungslosen Ablauf.
+                </p>
+            </div>
+            <div class="circle bg">
+                <img src="images/wedding-3.jpg" alt="Feierlichkeit" />
+                <div class="circle large">
+                    <img src="images/wedding-3.jpg" alt="Feierlichkeit" />
+                    <div class="circle small">
+                        <img src="images/wedding-3.jpg" alt="Feierlichkeit" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-3">
+            <div class="content">
+                <h1>Firmenfeiern</h1>
+                <p>
+                    Wir wissen, wie wichtig ein gelungener Firmenanlass ist. Mit unseren Ballons und Getränken verwandeln wir jede Veranstaltung in ein besonderes Erlebnis, das Ihre Gäste beeindrucken wird.
+                </p>
+            </div>
+            <div class="circle bg">
+                <img src="images/wedding.jpg" alt="Firmenfeier" />
+                <div class="circle large">
+                    <img src="images/wedding.jpg" alt="Firmenfeier" />
+                    <div class="circle small">
+                        <img src="images/wedding.jpg" alt="Firmenfeier" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="slide-loader">
+            <li><a href="" class="slide-btn active" data-target="slide-1">1</a></li>
+            <li><a href="" class="slide-btn " data-target="slide-2">2</a></li>
+            <li><a href="" class="slide-btn " data-target="slide-3">3</a></li>
+        </ul>
+    </div>
+
+    <main>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <h1>Über Uns</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="img-box">
+                        <img src="./images/about2.jpg" alt="Über Uns" class="img-fluid" />
+                        <img src="./images/About.jpg" alt="Unser Team" class="corner-img" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Qualität und Kundenzufriedenheit im Fokus</h4>
+                    <p>
+                    Wir sind spezialisiert auf Events, die in Erinnerung bleiben. Ob es sich um Hochzeiten, Firmenfeiern oder andere Anlässe handelt – wir bieten die besten Produkte und Dienstleistungen, um sicherzustellen, dass alles reibungslos abläuft und Ihre Gäste begeistert sind.
+                    </p>
+                    <p>
+                        Unsere Expertise und unser großes Netzwerk sorgen dafür, dass jeder Wunsch erfüllt wird. Vertrauen Sie uns, wenn es um die perfekte Planung und Durchführung Ihrer Veranstaltung geht.
+                    </p>
+                    <a href="#" class="section-btn">Mehr erfahren</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row">
+                <h1>Unsere Leistungen</h1>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="./images/Saal.jpg" alt="Hochzeit" />
+                        </div>
+                        <div class="details">
+                            <h4>Hochzeiten</h4>
+                            <p>
+                            Wir machen Ihre Hochzeit zu einem ganz besonderen Tag. Von der Dekoration bis zu den Getränken bieten wir alles, um Ihnen und Ihren Gästen eine unvergessliche Feier zu bereiten.
+                            </p>
+                            <a href="#" class="section-btn">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="./images/drink.jpg" alt="Getränke" />
+                        </div>
+                        <div class="details">
+                            <h4>Getränkeservice</h4>
+                            <p>
+                            Unsere exklusiven Getränkeservices sorgen dafür, dass Ihre Gäste bestens versorgt sind. Von alkoholfreien Cocktails bis hin zu besonderen Spezialitäten – wir bieten alles für Ihre Veranstaltung.
+                            </p>
+                            <a href="#" class="section-btn">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="./images/champagna.jpg" alt="Firmenfeier" />
+                        </div>
+                        <div class="details">
+                            <h4>Firmenfeiern</h4>
+                            <p>
+                            Wir bieten Ihnen professionelle Planung und Durchführung Ihrer Firmenfeier. Mit unserem Know-how und unserer Liebe zum Detail wird Ihre Veranstaltung zum vollen Erfolg.
+                            </p>
+                            <a href="#" class="section-btn">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="./images/ballons.jpg" alt="Ballons" />
+                        </div>
+                        <div class="details">
+                            <h4>Explosionsballons</h4>
+                            <p>
+                            Unsere einzigartigen Ballons – von Konfetti-Ballons bis zu Seifenblasenballons – verleihen Ihrer Feier eine ganz besondere Note. Wir sorgen für spektakuläre Momente, die Ihre Gäste begeistern werden.
+                            </p>
+                            <a href="#" class="section-btn">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1>Our Portfolio</h1>
+            </div>
+
+            <div class="row portfolio-contaner">
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                    <div class="portfolio-img">
+                        <img class="img-fluid" src="./images/Portfolio/1.jpg" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Bild 1</h4>
+                        <p>Bild 1</p>
+                        <a href="./images/Portfolio/1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wedding Planning 1">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </a>
+                        <a href="#" class="details-link" title="More Details">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                    <div class="portfolio-img">
+                        <img class="img-fluid" src="./images/Portfolio/2.jpg" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Bild 2</h4>
+                        <p>Bild 2</p>
+                        <a href="./images/Portfolio/2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wedding Planning 1">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </a>
+                        <a href="#" class="details-link" title="More Details">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                    <div class="portfolio-img">
+                        <img class="img-fluid" src="./images/Portfolio/3.jpg" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Bild 3</h4>
+                        <p>Bild 3</p>
+                        <a href="./images/Portfolio/3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wedding Planning 1">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </a>
+                        <a href="#" class="details-link" title="More Details">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                    <div class="portfolio-img">
+                        <img class="img-fluid" src="./images/Portfolio/4.jpg" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Bild 4</h4>
+                        <p>Bild 4</p>
+                        <a href="./images/Portfolio/4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wedding Planning 1">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </a>
+                        <a href="#" class="details-link" title="More Details">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 portfolio-item filter-wedding">
+                    <div class="portfolio-img">
+                        <img class="img-fluid" src="./images/Portfolio/5.jpg" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Bild 5</h4>
+                        <p>Bild 5</p>
+                        <a href="./images/Portfolio/5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Wedding Planning 1">
+                            <ion-icon name="add-outline"></ion-icon>
+                        </a>
+                        <a href="#" class="details-link" title="More Details">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <h1>contact Us</h1>
+            </div>
+            <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d327441.34820393584!2d8.306936483442952!3d50.12118576415859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd096f477096c5%3A0x422435029b0c600!2sFrankfurt!5e0!3m2!1sen!2sde!4v1731506151260!5m2!1sen!2sde" 
+               style="border:0; width: 100%; height: 270px;" 
+               frameborder="0"
+               allowfullscreen>
+            </iframe>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <div class="info">
+                    <div class="address">
+                        <ion-icon class="icon" name="location-outline"></ion-icon>
+                        <h4>Location</h4>
+                        <p>Straßenname, Frankfurt am Main, 123456</p>
+                    </div>
+                    <div class="email">
+                        <ion-icon class="icon" name="mail-outline"></ion-icon>
+                        <h4>Email</h4>
+                        <p>info@example.de</p>
+                    </div>
+                    <div class="phone">
+                        <ion-icon class="icon" name="call-outline"></ion-icon>
+                        <h4>Call:</h4>
+                        <p>+1 234 56789</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input 
+                       type="text" 
+                       class="form-control"
+                       placeholder="your Name"
+                       required
+                      >
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input 
+                         type="Email" 
+                         class="form-control"
+                         placeholder="your Email"
+                         required
+                        >
+                      </div>
+                </div>
+                <div class="form-group mt-3">
+                    <input type="text" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+<script src="./js/main.js"></script>
+<script src="./js/isotope.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+</body>
+</html>
