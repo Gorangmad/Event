@@ -779,6 +779,15 @@ section p {
         padding: 30px;
     }
 
+    .logo {
+        font-family: 'Great Vibes', cursive;
+        height: 40px;
+        font-size: 30px;
+        color: black;
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-decoration: none;
+    }
     .nav li {
         display: none;
       }
@@ -802,6 +811,25 @@ section p {
     .circle.bg {
         width: 140vh; /* Fit to viewport */
         height: 140vh; /* Fit to viewport */
+    }
+
+    .slide-loader {
+        margin-bottom: 30px;
+        color: #111111;
+    }
+    
+    .slide-loader .slide-btn {
+        color: #111111;
+    }
+
+    .slide-loader::before{
+        position: absolute;
+        content: '';
+        top:50%;
+        left: -70%;
+        width: 100px;
+        height: 2px;
+        background: #111111;
     }
     
     
