@@ -23,7 +23,9 @@
 
 body {
   position: relative;
-  background: #f6f2e0;
+  /* background: #f6f2e0; */
+  background-color: #000;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100vh;
@@ -45,8 +47,9 @@ header {
   transition: 1s;
   z-index: 1300;
   margin-top: 20px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 9999px;
+  color: white;
 }
 
 @media (min-width: 1200px) {
@@ -65,9 +68,10 @@ header.active {
   left: 3.5%;
   width: 90vw;
   background: transparent;
-  border: 2px solid black;
   border-radius: 9999px;
   margin-top: 20px; */
+  /* border: 2px solid black; */
+  background-color: black;
 
   /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.15); */
 }
@@ -76,14 +80,14 @@ header.active {
   font-family: "Great Vibes", cursive;
   height: 40px;
   font-size: 40px;
-  color: black;
+  color: white;
   letter-spacing: 2px;
   font-weight: 400;
   text-decoration: none;
 }
 
 .menu {
-  color: black;
+  color: white;
   font-size: 2em;
   transition: 0.5s;
 }
@@ -124,7 +128,7 @@ header.active {
 }
 
 .nav li a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -132,6 +136,7 @@ header.active {
   transition: 0.5s;
   font-weight: 400;
   padding: 10px;
+  color: #fff;
 }
 
 .nav li a:hover,
@@ -488,12 +493,13 @@ Static SVG container */
   font-size: 6vw;
   font-family: "Lora";
   letter-spacing: 0.05em;
+  color: #fff;
 }
 
 .about-text-paragraph {
   font-family: "Roboto";
   font-size: 3.25vw;
-  color: rgb(107, 107, 107);
+  color: rgba(215, 215, 215, 0.598);
 
   font-weight: 400;
 }
@@ -581,7 +587,7 @@ Static SVG container */
 .hire-text-paragraph {
   font-family: "Roboto";
   font-size: 3.5vw;
-  color: rgb(107, 107, 107);
+  color: rgba(215, 215, 215, 0.598);
 
   font-weight: 400;
   margin-bottom: 64px;
@@ -665,6 +671,7 @@ Static SVG container */
   width: 44px;
   height: 44px;
   margin-bottom: 15px;
+  color: #fff;
 }
 
 .hire-card h1 {
@@ -675,7 +682,7 @@ Static SVG container */
 
 .hire-card p {
   font-size: 3vw;
-  color: rgb(107, 107, 107);
+  color: rgba(215, 215, 215, 0.598);
   margin-bottom: 15px;
 }
 
@@ -758,7 +765,7 @@ Static SVG container */
 .services-text-paragraph {
   font-family: "Roboto";
   font-size: 3.5vw;
-  color: rgb(107, 107, 107);
+  color: rgba(215, 215, 215, 0.598);
 
   font-weight: 400;
   margin-bottom: 64px;
@@ -862,7 +869,7 @@ Static SVG container */
 
 .services-card p {
   font-size: 3vw;
-  color: rgb(107, 107, 107);
+  color: rgba(215, 215, 215, 0.598);
   margin-bottom: 15px;
 }
 
@@ -880,7 +887,7 @@ Static SVG container */
 
 .ballon-services-card-inner p {
   font-size: 3vw;
-  color: rgb(107, 107, 107);
+  color: rgba(215, 215, 215, 0.598);
   margin-bottom: 15px;
 }
 
@@ -1075,13 +1082,13 @@ Static SVG container */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: brightness(0.5); /* Only applies to the background */
+  filter: brightness(0.9); /* Only applies to the background */
   z-index: 1; /* Background layer */
   transition: filter 0.3s ease; /* Smooth transition on hover */
 }
 
 .place-card:hover::before {
-  filter: brightness(0.75); /* Lightens the background on hover */
+  filter: brightness(0.5); /* Lightens the background on hover */
 }
 
 /* Styling for h1 (Frankfurt) */
@@ -1176,7 +1183,7 @@ Static SVG container */
   position: relative;
   margin: 40px 0;
   padding: 40px;
-  background-color: #ede8d0;
+  background-color: #747474;
   border-radius: 16px;
 }
 
@@ -1217,6 +1224,7 @@ Static SVG container */
   padding: 15px;
   padding-top: 64px;
   padding-bottom: 64px;
+  color: #000;
   /* background-color: ; */
 }
 
@@ -1224,12 +1232,14 @@ Static SVG container */
   font-size: 6vw;
   font-family: "Lora";
   letter-spacing: 0.05em;
+  color: #000;
 }
 
 .contact-para-text {
   letter-spacing: 0.01rem;
   padding-top: 10px;
   padding-bottom: 20px;
+  color: #000;
 }
 
 @media (min-width: 500px) {
@@ -1414,7 +1424,8 @@ Static SVG container */
 }
 
 .footer {
-  background-color: #f6f2e0;
+  background-color: #000;
+  color: #fff;
   padding: 70px 0;
 }
 .footer-col {
@@ -1423,7 +1434,7 @@ Static SVG container */
 }
 .footer-col h4 {
   font-size: 18px;
-  color: #000000;
+  color: #d0d0d0;
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -1434,7 +1445,7 @@ Static SVG container */
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #000000;
+  background-color: #d0d0d0;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -1450,7 +1461,7 @@ Static SVG container */
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 400;
-  color: #000;
+  color: #fff;
   display: block;
   transition: all 0.3s ease;
 }
@@ -1906,7 +1917,7 @@ section p {
     font-family: "Great Vibes", cursive;
     height: 40px;
     font-size: 30px;
-    color: black;
+    color: white;
     letter-spacing: 2px;
     font-weight: 400;
     text-decoration: none;
@@ -2009,7 +2020,7 @@ section p {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #ffffff;
+  background: #000;
   backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
@@ -2035,7 +2046,7 @@ section p {
 }
 
 .nav-mobile li a {
-  color: #111111;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
