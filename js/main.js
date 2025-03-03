@@ -12,36 +12,13 @@ const addEventListeners = (element, events, handler) => {
   events.forEach((event) => element.addEventListener(event, handler));
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Slide button navigation
-  const slideBtnList = document.querySelectorAll(".slide-btn");
-  slideBtnList.forEach((btn) => {
-    addEventListeners(btn, ["click", "touchstart"], function (e) {
-      e.preventDefault();
-      slideBtnList.forEach((el) => {
-        el.classList.remove("active");
-      });
-      this.classList.add("active");
-      slideNavigator(this.getAttribute("data-target"));
-    });
-  });
-
-  // Section navigation
-  const navList = document.querySelectorAll(".nav-btn");
-  navList.forEach((nav) => {
-    addEventListeners(nav, ["click", "touchstart"], function (e) {
-      e.preventDefault();
-      navList.forEach((el) => {
-        el.classList.remove("active");
-      });
-      this.classList.add("active");
-      sectionNavigator(this.getAttribute("data-target"));
-      if (screen.width < 768) {
-        toggleMenu();
-      }
-    });
-  });
-});
+// Function to close the mobile menu
+const closeMobileMenu = () => {
+  const menu = document.querySelector(".menu");
+  const navMobile = document.querySelector(".nav-mobile");
+  menu.classList.remove("active");
+  navMobile.classList.remove("active");
+};
 
 // Toggle the menu
 const toggleMenu = () => {
@@ -81,6 +58,45 @@ const initNavigation = () => {
   });
   sectionNavigator("about");
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Slide button navigation
+  const slideBtnList = document.querySelectorAll(".slide-btn");
+  slideBtnList.forEach((btn) => {
+    addEventListeners(btn, ["click", "touchstart"], function (e) {
+      e.preventDefault();
+      slideBtnList.forEach((el) => {
+        el.classList.remove("active");
+      });
+      this.classList.add("active");
+      slideNavigator(this.getAttribute("data-target"));
+    });
+  });
+
+  // Section navigation
+  const navList = document.querySelectorAll(".nav-btn");
+  navList.forEach((nav) => {
+    addEventListeners(nav, ["click", "touchstart"], function (e) {
+      e.preventDefault();
+      navList.forEach((el) => {
+        el.classList.remove("active");
+      });
+      this.classList.add("active");
+      sectionNavigator(this.getAttribute("data-target"));
+
+      // Close mobile menu when a link is clicked (for mobile screens)
+      if (screen.width < 768) {
+        closeMobileMenu();
+      }
+    });
+  });
+
+  // Add event listeners to mobile navigation links to close the menu
+  const mobileNavLinks = document.querySelectorAll(".nav-mobile .nav-btn");
+  mobileNavLinks.forEach((link) => {
+    link.addEventListener("click", closeMobileMenu);
+  });
+});
 
 // Select all navigation buttons (both desktop and mobile)
 const allNavButtons = document.querySelectorAll(".nav a, .nav-mobile a");

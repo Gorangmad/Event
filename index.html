@@ -72,32 +72,32 @@
 
     <!-- Mobile-Navigation -->
     <ul class="nav-mobile">
-      <li class="nav-btn active" href="/" onclick="resetHeader();">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          fill="rgba(255,255,255,1)"
-        >
-          <path fill="none" d="M0 0h24v24H0z"></path>
-          <path
-            d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"
-          ></path>
-        </svg>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="about">Über Uns</a>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="services">Unsere Leistungen</a>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="portfolio">Portfolio</a>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="contact">Kontakt</a>
-      </li>
+        <li class="nav-btn active" href="/" onclick="resetHeader();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="rgba(255,255,255,1)"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"
+            ></path>
+          </svg>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="about">Über Uns</a>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="services">Unsere Leistungen</a>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="contact">Kontakt</a>
+        </li>
     </ul>
 
     <!-- Banner -->
@@ -618,80 +618,27 @@
           <p class="text-center contact-para-text">
             E hi@thebrothersevents.com T 0162 7000010
           </p>
-          <form class="input-container">
-            <input
-              type="text"
-              placeholder="Vorname"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Nachname"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Email"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Tel."
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Ort/Location"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Event Datum"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Geschatzte Startzeit"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Geschatzte Event Lange"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Geschatzte Gasteanzahl"
-              name="text"
-              class="contact-input"
-            />
-            <textarea
-              placeholder="Anlass, Geschatzte Startzeit Start"
-              required=""
-              cols="50"
-              rows="8"
-              id="textarea"
-              name="textarea"
-              class="contact-input contact-textarea text-white"
-            >
-            </textarea>
-            <div class="d-flex justify-content-start" style="">
-              <button class="learn-more contact-button">
-                <span class="circle" aria-hidden="true">
-                  <span class="icon arrow"></span>
-                </span>
-                <span class="contact-button-text">Senden</span>
-              </button>
-            </div>
-          </form>
+          <form id="contact-form-1" class="input-container">
+  <!-- Your existing input fields -->
+              <input type="text" placeholder="Vorname" name="vorname" class="contact-input" />
+              <input type="text" placeholder="Nachname" name="nachname" class="contact-input" />
+              <input type="text" placeholder="Email" name="email" class="contact-input" />
+              <input type="text" placeholder="Tel." name="telefon" class="contact-input" />
+              <input type="text" placeholder="Ort/Location" name="ort" class="contact-input" />
+              <input type="text" placeholder="Event Datum" name="event_datum" class="contact-input" />
+              <input type="text" placeholder="Geschatzte Startzeit" name="startzeit" class="contact-input" />
+              <input type="text" placeholder="Geschatzte Event Lange" name="event_lange" class="contact-input" />
+              <input type="text" placeholder="Geschatzte Gasteanzahl" name="gasteanzahl" class="contact-input" />
+              <textarea placeholder="Anlass, Geschatzte Startzeit Start" cols="50" rows="8" name="anlass" class="contact-input contact-textarea text-black"></textarea>
+              <div class="d-flex justify-content-start">
+                <button type="submit" class="learn-more contact-button">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="contact-button-text">Senden</span>
+                </button>
+              </div>
+        </form>
         </div>
       </div>
 
@@ -992,80 +939,27 @@
           <p class="text-center contact-para-text">
             E hi@thebrothersevents.com T 0162 7000010
           </p>
-          <form class="input-container">
-            <input
-              type="text"
-              placeholder="Vorname"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Nachname"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Email"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Tel."
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Ort/Location"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Event Datum"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Geschatzte Startzeit"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Geschatzte Event Lange"
-              name="text"
-              class="contact-input"
-            />
-            <input
-              type="text"
-              placeholder="Geschatzte Gasteanzahl"
-              name="text"
-              class="contact-input"
-            />
-            <textarea
-              placeholder="Anlass, Geschatzte Startzeit Start"
-              required=""
-              cols="50"
-              rows="8"
-              id="textarea"
-              name="textarea"
-              class="contact-input contact-textarea text-white"
-            >
-            </textarea>
-            <div class="d-flex justify-content-start" style="">
-              <button class="learn-more contact-button">
+         <form id="contact-form-2" class="input-container">
+  <!-- Your existing input fields -->
+            <input type="text" placeholder="Vorname" name="vorname" class="contact-input" />
+            <input type="text" placeholder="Nachname" name="nachname" class="contact-input" />
+            <input type="text" placeholder="Email" name="email" class="contact-input" />
+            <input type="text" placeholder="Tel." name="telefon" class="contact-input" />
+            <input type="text" placeholder="Ort/Location" name="ort" class="contact-input" />
+            <input type="text" placeholder="Event Datum" name="event_datum" class="contact-input" />
+            <input type="text" placeholder="Geschatzte Startzeit" name="startzeit" class="contact-input" />
+            <input type="text" placeholder="Geschatzte Event Lange" name="event_lange" class="contact-input" />
+            <input type="text" placeholder="Geschatzte Gasteanzahl" name="gasteanzahl" class="contact-input" />
+            <textarea placeholder="Anlass, Geschatzte Startzeit Start" cols="50" rows="8" name="anlass" class="contact-input contact-textarea text-black"></textarea>
+            <div class="d-flex justify-content-start">
+              <button type="submit" class="learn-more contact-button">
                 <span class="circle" aria-hidden="true">
                   <span class="icon arrow"></span>
                 </span>
                 <span class="contact-button-text">Senden</span>
               </button>
             </div>
-          </form>
+        </form>
         </div>
           </div>
         </div>
@@ -1135,5 +1029,49 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+ <script>
+    // Initialize EmailJS with your Public Key
+    (function () {
+      emailjs.init("wYyc9h2vr4kNnHI2a"); // Replace with your EmailJS Public Key
+    })();
+
+    // Function to handle form submission
+    function handleFormSubmit(formID, successMessage, errorMessage) {
+      document.getElementById(formID).addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const serviceID = "service_21mg8eh"; // Replace with your EmailJS Service ID
+        const templateID = "template_gtwexsn"; // Replace with your EmailJS Template ID
+
+        // Send the email
+        emailjs.sendForm(serviceID, templateID, this).then(
+          function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            alert(successMessage); // Show success message
+          },
+          function (error) {
+            console.log("FAILED...", error);
+            alert(errorMessage); // Show error message
+          }
+        );
+      });
+    }
+
+    // Handle form submission for the first contact form
+    handleFormSubmit(
+      "contact-form-1",
+      "Ihre Nachricht wurde erfolgreich gesendet! (Form 1)",
+      "Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut. (Form 1)"
+    );
+
+    // Handle form submission for the second contact form
+    handleFormSubmit(
+      "contact-form-2",
+      "Ihre Nachricht wurde erfolgreich gesendet! (Form 2)",
+      "Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut. (Form 2)"
+    );
+</script>
   </body>
 </html>

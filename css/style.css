@@ -2085,12 +2085,15 @@ section p {
 }
 
 .contact form button[type="submit"] {
-  background: var(--primary);
-  border: 1px solid var(--primary);
-  padding: 10px 25px;
+  /* background: var(--primary);
+  border: 1px solid var(--primary); */
+  /* padding: 10px 25px; */
   color: #ffffff;
   transition: 0.5s;
   margin-top: 20px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .contact form button[type="submit"]:hover {
