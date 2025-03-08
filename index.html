@@ -619,17 +619,16 @@
             E hi@thebrothersevents.com T 0162 7000010
           </p>
           <form id="contact-form-1" class="input-container">
-  <!-- Your existing input fields -->
-              <input type="text" placeholder="Vorname" name="vorname" class="contact-input" />
-              <input type="text" placeholder="Nachname" name="nachname" class="contact-input" />
-              <input type="text" placeholder="Email" name="email" class="contact-input" />
-              <input type="text" placeholder="Tel." name="telefon" class="contact-input" />
-              <input type="text" placeholder="Ort/Location" name="ort" class="contact-input" />
-              <input type="text" placeholder="Event Datum" name="event_datum" class="contact-input" />
-              <input type="text" placeholder="Geschatzte Startzeit" name="startzeit" class="contact-input" />
-              <input type="text" placeholder="Geschatzte Event Lange" name="event_lange" class="contact-input" />
-              <input type="text" placeholder="Geschatzte Gasteanzahl" name="gasteanzahl" class="contact-input" />
-              <textarea placeholder="Anlass, Geschatzte Startzeit Start" cols="50" rows="8" name="anlass" class="contact-input contact-textarea text-black"></textarea>
+              <input type="text" placeholder="Vorname" name="vorname" class="contact-input" required pattern="[A-Za-zäöüÄÖÜß\s]+" title="Bitte geben Sie einen gültigen Vornamen ein" />
+              <input type="text" placeholder="Nachname" name="nachname" class="contact-input" required pattern="[A-Za-zäöüÄÖÜß\s]+" title="Bitte geben Sie einen gültigen Nachnamen ein" />
+              <input type="email" placeholder="Email" name="email" class="contact-input" required />
+              <input type="tel" placeholder="Tel." name="telefon" class="contact-input" required pattern="[0-9\s\+\-]+" title="Bitte geben Sie eine gültige Telefonnummer ein" />
+              <input type="text" placeholder="Ort/Location" name="ort" class="contact-input" required />
+              <input type="date" placeholder="Event Datum" name="event_datum" class="contact-input" required />
+              <input type="time" placeholder="Geschatzte Startzeit" name="startzeit" class="contact-input" required />
+              <input type="number" placeholder="Geschatzte Event Lange (Stunden)" name="event_lange" class="contact-input" required min="1" max="24" />
+              <input type="number" placeholder="Geschatzte Gasteanzahl" name="gasteanzahl" class="contact-input" required min="1" />
+              <textarea placeholder="Anlass, Geschatzte Startzeit Start" cols="50" rows="8" name="anlass" class="contact-input contact-textarea text-black" required minlength="10"></textarea>
               <div class="d-flex justify-content-start">
                 <button type="submit" class="learn-more contact-button">
                   <span class="circle" aria-hidden="true">
@@ -940,17 +939,16 @@
             E hi@thebrothersevents.com T 0162 7000010
           </p>
          <form id="contact-form-2" class="input-container">
-  <!-- Your existing input fields -->
-            <input type="text" placeholder="Vorname" name="vorname" class="contact-input" />
-            <input type="text" placeholder="Nachname" name="nachname" class="contact-input" />
-            <input type="text" placeholder="Email" name="email" class="contact-input" />
-            <input type="text" placeholder="Tel." name="telefon" class="contact-input" />
-            <input type="text" placeholder="Ort/Location" name="ort" class="contact-input" />
-            <input type="text" placeholder="Event Datum" name="event_datum" class="contact-input" />
-            <input type="text" placeholder="Geschatzte Startzeit" name="startzeit" class="contact-input" />
-            <input type="text" placeholder="Geschatzte Event Lange" name="event_lange" class="contact-input" />
-            <input type="text" placeholder="Geschatzte Gasteanzahl" name="gasteanzahl" class="contact-input" />
-            <textarea placeholder="Anlass, Geschatzte Startzeit Start" cols="50" rows="8" name="anlass" class="contact-input contact-textarea text-black"></textarea>
+            <input type="text" placeholder="Vorname" name="vorname" class="contact-input" required pattern="[A-Za-zäöüÄÖÜß\s]+" title="Bitte geben Sie einen gültigen Vornamen ein" />
+            <input type="text" placeholder="Nachname" name="nachname" class="contact-input" required pattern="[A-Za-zäöüÄÖÜß\s]+" title="Bitte geben Sie einen gültigen Nachnamen ein" />
+            <input type="email" placeholder="Email" name="email" class="contact-input" required />
+            <input type="tel" placeholder="Tel." name="telefon" class="contact-input" required pattern="[0-9\s\+\-]+" title="Bitte geben Sie eine gültige Telefonnummer ein" />
+            <input type="text" placeholder="Ort/Location" name="ort" class="contact-input" required />
+            <input type="date" placeholder="Event Datum" name="event_datum" class="contact-input" required />
+            <input type="time" placeholder="Geschatzte Startzeit" name="startzeit" class="contact-input" required />
+            <input type="number" placeholder="Geschatzte Event Lange (Stunden)" name="event_lange" class="contact-input" required min="1" max="24" />
+            <input type="number" placeholder="Geschatzte Gasteanzahl" name="gasteanzahl" class="contact-input" required min="1" />
+            <textarea placeholder="Anlass, Geschatzte Startzeit Start" cols="50" rows="8" name="anlass" class="contact-input contact-textarea text-black" required minlength="10"></textarea>
             <div class="d-flex justify-content-start">
               <button type="submit" class="learn-more contact-button">
                 <span class="circle" aria-hidden="true">
