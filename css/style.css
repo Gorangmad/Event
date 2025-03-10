@@ -1047,7 +1047,7 @@ Static SVG container */
 
 /* Define different background images for each card */
 .place-card.bg-image-1::before {
-  background-image: url("../images/wedding-3.jpg");
+  background-image: url("../images/eventsImages/drink16.jpg");
 }
 
 .place-card.bg-image-2::before {
@@ -1059,7 +1059,7 @@ Static SVG container */
 }
 
 .place-card.bg-image-4::before {
-  background-image: url("../images/eventsImages/drink3.jpg");
+  background-image: url("../images/eventsImages/drink18.jpg");
 }
 
 .place-card.bg-image-5::before {
@@ -1410,7 +1410,6 @@ Static SVG container */
   color: #fff;
 }
 
-
 /* Contact Page */
 
 #contact-section {
@@ -1602,9 +1601,6 @@ Static SVG container */
 .contact .contact-button:hover .contact-button-text {
   color: #fff;
 }
-
-
-
 
 /* ------------------------------- */
 
@@ -2089,12 +2085,15 @@ section p {
 }
 
 .contact form button[type="submit"] {
-  background: var(--primary);
-  border: 1px solid var(--primary);
-  padding: 10px 25px;
+  /* background: var(--primary);
+  border: 1px solid var(--primary); */
+  /* padding: 10px 25px; */
   color: #ffffff;
   transition: 0.5s;
   margin-top: 20px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .contact form button[type="submit"]:hover {

@@ -72,32 +72,32 @@
 
     <!-- Mobile-Navigation -->
     <ul class="nav-mobile">
-      <li class="nav-btn active" href="/" onclick="resetHeader();">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          fill="rgba(255,255,255,1)"
-        >
-          <path fill="none" d="M0 0h24v24H0z"></path>
-          <path
-            d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"
-          ></path>
-        </svg>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="about">Über Uns</a>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="services">Unsere Leistungen</a>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="portfolio">Portfolio</a>
-      </li>
-      <li>
-        <a href="" class="nav-btn" data-target="contact">Kontakt</a>
-      </li>
+        <li class="nav-btn active" href="/" onclick="resetHeader();">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="rgba(255,255,255,1)"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM13 19H18V9.15745L12 3.7029L6 9.15745V19H11V13H13V19Z"
+            ></path>
+          </svg>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="about">Über Uns</a>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="services">Unsere Leistungen</a>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="nav-btn" data-target="contact">Kontakt</a>
+        </li>
     </ul>
 
     <!-- Banner -->
@@ -184,7 +184,7 @@
         />
         <img
           class="position-absolute main-image3"
-          src="./images/wedding-3.jpg"
+          src="./images/eventsImages/drink16.jpg"
           alt="Hochzeiten Mainz mit Stil"
         />
       </div>
@@ -226,13 +226,13 @@
           "
         >
           <swiper-slide class=""
-            ><img src="./images/eventsImages/drink3.jpg" class="slider-image1"
+            ><img src="./images/eventsImages/drink17.jpg" class="slider-image1"
           /></swiper-slide>
           <swiper-slide
             ><img src="./images/eventsImages/team.jpg" class="slider-image1"
           /></swiper-slide>
           <swiper-slide
-            ><img src="./images/wedding-3.jpg" class="slider-image1"
+            ><img src="./images/eventsImages/drink16.jpg" class="slider-image1"
           /></swiper-slide>
           <swiper-slide
             ><img src="./images/eventsImages/team3.jpg" class="slider-image1"
@@ -682,20 +682,6 @@
               class="contact-input contact-textarea text-white"
             >
             </textarea>
-            <!-- DSGVO Zustimmung -->
-            <div class="d-flex align-items-center mt-3">
-              <input
-                type="checkbox"
-                id="ds-gvo-checkbox"
-                class="me-2"
-              />
-              <label for="ds-gvo-checkbox">
-                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.
-              </label>
-            </div>
-            <p id="ds-gvo-error" class="text-danger mt-1" style="display: none;">
-              Bitte bestätigen Sie die Datenschutzerklärung, bevor Sie fortfahren.
-            </p>
             <div class="d-flex justify-content-start" style="">
               <button class="learn-more contact-button">
                 <span class="circle" aria-hidden="true">
@@ -981,7 +967,7 @@
           <p class="text-center contact-para-text">
             E event.thebrothers@gmail.com T 015145847447
           </p>
-          <form class="input-container" onsubmit="return validateDSGVO()">
+          <form class="input-container">
             <input
               type="text"
               placeholder="Vorname"
@@ -1046,21 +1032,6 @@
               class="contact-input contact-textarea text-white"
             >
             </textarea>
-            <!-- DSGVO Zustimmung -->
-            <div class="d-flex align-items-center mt-3">
-              <input
-                type="checkbox"
-                id="ds-gvo-checkbox"
-                class="me-2"
-              />
-              <label for="ds-gvo-checkbox">
-                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.
-              </label>
-            </div>
-            <p id="ds-gvo-error" class="text-danger mt-1" style="display: none;">
-              Bitte bestätigen Sie die Datenschutzerklärung, bevor Sie fortfahren.
-            </p>
-
             <div class="d-flex justify-content-start" style="">
               <button class="learn-more contact-button">
                 <span class="circle" aria-hidden="true">
@@ -1069,7 +1040,7 @@
                 <span class="contact-button-text">Senden</span>
               </button>
             </div>
-          </form>
+        </form>
         </div>
           </div>
         </div>
@@ -1153,5 +1124,49 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+ <script>
+    // Initialize EmailJS with your Public Key
+    (function () {
+      emailjs.init("wYyc9h2vr4kNnHI2a"); // Replace with your EmailJS Public Key
+    })();
+
+    // Function to handle form submission
+    function handleFormSubmit(formID, successMessage, errorMessage) {
+      document.getElementById(formID).addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const serviceID = "service_21mg8eh"; // Replace with your EmailJS Service ID
+        const templateID = "template_gtwexsn"; // Replace with your EmailJS Template ID
+
+        // Send the email
+        emailjs.sendForm(serviceID, templateID, this).then(
+          function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            alert(successMessage); // Show success message
+          },
+          function (error) {
+            console.log("FAILED...", error);
+            alert(errorMessage); // Show error message
+          }
+        );
+      });
+    }
+
+    // Handle form submission for the first contact form
+    handleFormSubmit(
+      "contact-form-1",
+      "Ihre Nachricht wurde erfolgreich gesendet! (Form 1)",
+      "Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut. (Form 1)"
+    );
+
+    // Handle form submission for the second contact form
+    handleFormSubmit(
+      "contact-form-2",
+      "Ihre Nachricht wurde erfolgreich gesendet! (Form 2)",
+      "Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut. (Form 2)"
+    );
+</script>
   </body>
 </html>
