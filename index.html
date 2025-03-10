@@ -365,7 +365,7 @@
           </p>
           <p class="services-text-paragraph">
             Wir bieten erstklassige Services, die Ihre Veranstaltung
-            unvergesslich machen. Von Barista-Service über Smoothies bis hin zu
+            unvergesslich machen. Von Barista-Service über Cocktails bis hin zu
             Ballondekorationen – bei uns finden Sie alles, was Ihre Gäste
             begeistert.
           </p>
@@ -408,12 +408,11 @@
                 d="M6.13317 2L5.01052 9.85858C4.70849 11.9728 5.53231 13.7891 6.89117 15.0465C7.99601 16.0688 9.45948 16.7319 11.0005 16.9343V20H6.00047V22H18.0005V20H13.0005V16.9343C14.5415 16.7319 16.0049 16.0688 17.1098 15.0465C18.4686 13.7891 19.2924 11.9728 18.9904 9.85858L17.8678 2H6.13317ZM10.0003 7C9.16936 7.00013 8.16238 7.24244 7.37122 7.47579L7.86776 4H16.1332L16.6234 7.4314C15.7848 7.70691 14.8897 8 14.0005 8C12.6083 8 11.4276 6.99978 10.0003 7Z"
               ></path>
             </svg>
-            <h1>Smoothies</h1>
+            <h1>Cocktails</h1>
             <p>
-              Frische Smoothies, die jede Feier bereichern. Unsere gesunden und
-              leckeren Kreationen sind ideal für Sommerfeste,
-              Firmenveranstaltungen oder als besondere Erfrischung auf Ihrer
-              Hochzeit.
+              Erfrischende Cocktails, die jede Feier unvergesslich machen. 
+              Unsere kreativen und köstlichen Mixgetränke sind perfekt 
+              für Sommerpartys, Firmenfeiern oder als stilvolle Begleitung auf Ihrer Hochzeit.
             </p>
           </div>
           <div class="ballon-services-card">
@@ -616,7 +615,7 @@
             Unverbindlich Anfragen
           </p>
           <p class="text-center contact-para-text">
-            E hi@thebrothersevents.com T 0162 7000010
+            Email event.thebrothers@gmail.com T 015145847447
           </p>
           <form class="input-container">
             <input
@@ -683,6 +682,20 @@
               class="contact-input contact-textarea text-white"
             >
             </textarea>
+            <!-- DSGVO Zustimmung -->
+            <div class="d-flex align-items-center mt-3">
+              <input
+                type="checkbox"
+                id="ds-gvo-checkbox"
+                class="me-2"
+              />
+              <label for="ds-gvo-checkbox">
+                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.
+              </label>
+            </div>
+            <p id="ds-gvo-error" class="text-danger mt-1" style="display: none;">
+              Bitte bestätigen Sie die Datenschutzerklärung, bevor Sie fortfahren.
+            </p>
             <div class="d-flex justify-content-start" style="">
               <button class="learn-more contact-button">
                 <span class="circle" aria-hidden="true">
@@ -699,40 +712,16 @@
         <div class="container-footer">
           <div class="row-footer">
             <div class="footer-col">
-              <h4>company</h4>
+              <h4>Rechtlich</h4>
               <ul class="p-0">
-                <li><a href="#">about us</a></li>
-                <li><a href="#">our services</a></li>
-                <li><a href="#">privacy policy</a></li>
-                <li><a href="#">affiliate program</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>get help</h4>
-              <ul class="p-0">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">shipping</a></li>
-                <li><a href="#">returns</a></li>
-                <li><a href="#">order status</a></li>
-                <li><a href="#">payment options</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>online shop</h4>
-              <ul class="p-0">
-                <li><a href="#">watch</a></li>
-                <li><a href="#">bag</a></li>
-                <li><a href="#">shoes</a></li>
-                <li><a href="#">dress</a></li>
+                <li><a href="datenschutz.html">Impressum</a></li>
+                <li><a href="impressum.html">Datenschutz</a></li>
               </ul>
             </div>
             <div class="footer-col">
               <h4>follow us</h4>
               <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/thebrothersevent?igsh=MXhjZzhreWVlMXNi"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -849,7 +838,7 @@
                 <div class="details">
                   <h4>Explosionsballons</h4>
                   <p>
-                    Unsere einzigartigen Ballons – von Konfetti-Ballons bis zu
+                    Unsere einzigartigen Ballons – von Explosions-Ballons bis zu
                     Seifenblasenballons – verleihen Ihrer Feier eine ganz
                     besondere Note. Wir sorgen für spektakuläre Momente, die
                     Ihre Gäste begeistern werden.
@@ -990,9 +979,9 @@
             Unverbindlich Anfragen
           </p>
           <p class="text-center contact-para-text">
-            E hi@thebrothersevents.com T 0162 7000010
+            E event.thebrothers@gmail.com T 015145847447
           </p>
-          <form class="input-container">
+          <form class="input-container" onsubmit="return validateDSGVO()">
             <input
               type="text"
               placeholder="Vorname"
@@ -1057,6 +1046,21 @@
               class="contact-input contact-textarea text-white"
             >
             </textarea>
+            <!-- DSGVO Zustimmung -->
+            <div class="d-flex align-items-center mt-3">
+              <input
+                type="checkbox"
+                id="ds-gvo-checkbox"
+                class="me-2"
+              />
+              <label for="ds-gvo-checkbox">
+                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.
+              </label>
+            </div>
+            <p id="ds-gvo-error" class="text-danger mt-1" style="display: none;">
+              Bitte bestätigen Sie die Datenschutzerklärung, bevor Sie fortfahren.
+            </p>
+
             <div class="d-flex justify-content-start" style="">
               <button class="learn-more contact-button">
                 <span class="circle" aria-hidden="true">
@@ -1080,6 +1084,20 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+      function validateDSGVO() {
+        let checkbox = document.getElementById("ds-gvo-checkbox");
+        let errorMsg = document.getElementById("ds-gvo-error");
+    
+        if (!checkbox.checked) {
+          errorMsg.style.display = "block";
+          return false;
+        } else {
+          errorMsg.style.display = "none";
+          return true;
+        }
+      }
+    </script>
     <script>
       // swiper element
       const swiperEl = document.querySelector(".images-swiper-container");
